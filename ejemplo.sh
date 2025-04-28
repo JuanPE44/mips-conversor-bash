@@ -1,3 +1,6 @@
 #!/bin/bash
 
-echo "¡Hola, mundo!"
+# leer archivo
+while IFS= read -r linea; do
+  echo "$linea"
+done < $1
